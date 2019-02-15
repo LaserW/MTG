@@ -8,20 +8,20 @@
 
 import UIKit
 
-class MealListTableViewController: UITableViewController {
+class MTGListTableViewController: UITableViewController {
     
-    var meals = [Meal]()
+    var deck = [MTG]()
     
     override func viewDidLoad() {
-        loadMeals()
+        loadDeck()
     }
     
     func saveMeals() {
         // TODO: save the meals
     }
     
-    func loadMeals() {
-        meals = Meal.load()
+    func loadDeck() {
+        deck = MTG.load()
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -29,19 +29,19 @@ class MealListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return meals.count
+        return deck.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell") as! MealViewCell
-        let meal = meals[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MealCell") as! MTGViewCell
+        let card = deck[indexPath.row]
         
-        configure(cell: cell, with: meal)
+        configure(cell: cell, with: card)
         
         return cell
     }
     
-    func configure(cell: MealViewCell, with meal: Meal) {
+    func configure(cell: MTGViewCell, with meal: MTG) {
         cell.photoImageView.image = meal.photo
         cell.nameLabel.text = meal.name
         cell.starsLabel.text = meal.stars
@@ -50,10 +50,10 @@ class MealListTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "MealDetailSegue" else { return }
         
-        let controller = segue.destination as! MealDetailViewController
+        let controller = segue.destination as! MTGDetailViewController
         
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         
-        controller.meal = meals[indexPath.row]
+        controller.deck = deck[indexPath.row]
     }
 }

@@ -8,16 +8,16 @@
 
 import UIKit
 
-class MealDetailViewController: UIViewController {
+class MTGDetailViewController: UIViewController {
     
     @IBOutlet weak var topStackView: UIStackView!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
-    @IBOutlet weak var timestampLabel: UILabel!
+    @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var notesLabel: UILabel!
     
-    var meal: Meal?
+    var deck: MTG?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +25,13 @@ class MealDetailViewController: UIViewController {
     }
     
     func updateUI() {
-        guard let meal = meal else { return }
+        guard let card = deck else { return }
         
-        photoImageView.image = meal.photo
-        nameLabel.text = meal.name
-        ratingLabel.text = meal.stars
-        timestampLabel.text = meal.date
-        notesLabel.text = meal.notes
+        photoImageView.image = card.photo
+        nameLabel.text = card.name
+        ratingLabel.text = card.stars
+        costLabel.text = card.cost
+        notesLabel.text = card.notes
         
     }
     

@@ -11,10 +11,10 @@
 		69EEA47B2213368C00236499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EEA4792213368C00236499 /* Main.storyboard */; };
 		69EEA47D2213369300236499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69EEA47C2213369300236499 /* Assets.xcassets */; };
 		69EEA4802213369300236499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EEA47E2213369300236499 /* LaunchScreen.storyboard */; };
-		69EEA48C2213373A00236499 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEA48B2213373A00236499 /* Meal.swift */; };
-		69EEA48E2213392F00236499 /* MealListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEA48D2213392F00236499 /* MealListTableViewController.swift */; };
-		69F32AFB2213429100738736 /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F32AFA2213429100738736 /* MealViewCell.swift */; };
-		69F32AFD221348F100738736 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F32AFC221348F000738736 /* MealDetailViewController.swift */; };
+		69EEA48C2213373A00236499 /* MTG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEA48B2213373A00236499 /* MTG.swift */; };
+		69EEA48E2213392F00236499 /* MTGListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEA48D2213392F00236499 /* MTGListTableViewController.swift */; };
+		69F32AFB2213429100738736 /* MTGViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F32AFA2213429100738736 /* MTGViewCell.swift */; };
+		69F32AFD221348F100738736 /* MTGDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F32AFC221348F000738736 /* MTGDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		69EEA47C2213369300236499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69EEA47F2213369300236499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69EEA4812213369300236499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69EEA48B2213373A00236499 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		69EEA48D2213392F00236499 /* MealListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTableViewController.swift; sourceTree = "<group>"; };
-		69F32AFA2213429100738736 /* MealViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
-		69F32AFC221348F000738736 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
+		69EEA48B2213373A00236499 /* MTG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTG.swift; sourceTree = "<group>"; };
+		69EEA48D2213392F00236499 /* MTGListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGListTableViewController.swift; sourceTree = "<group>"; };
+		69F32AFA2213429100738736 /* MTGViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGViewCell.swift; sourceTree = "<group>"; };
+		69F32AFC221348F000738736 /* MTGDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		69EEA4872213369F00236499 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				69EEA48B2213373A00236499 /* Meal.swift */,
+				69EEA48B2213373A00236499 /* MTG.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,7 +82,7 @@
 			children = (
 				69EEA4792213368C00236499 /* Main.storyboard */,
 				69EEA47E2213369300236499 /* LaunchScreen.storyboard */,
-				69F32AFA2213429100738736 /* MealViewCell.swift */,
+				69F32AFA2213429100738736 /* MTGViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,8 +90,8 @@
 		69EEA489221336AC00236499 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				69EEA48D2213392F00236499 /* MealListTableViewController.swift */,
-				69F32AFC221348F000738736 /* MealDetailViewController.swift */,
+				69EEA48D2213392F00236499 /* MTGListTableViewController.swift */,
+				69F32AFC221348F000738736 /* MTGDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,11 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69EEA48C2213373A00236499 /* Meal.swift in Sources */,
+				69EEA48C2213373A00236499 /* MTG.swift in Sources */,
 				69EEA4762213368C00236499 /* AppDelegate.swift in Sources */,
-				69EEA48E2213392F00236499 /* MealListTableViewController.swift in Sources */,
-				69F32AFD221348F100738736 /* MealDetailViewController.swift in Sources */,
-				69F32AFB2213429100738736 /* MealViewCell.swift in Sources */,
+				69EEA48E2213392F00236499 /* MTGListTableViewController.swift in Sources */,
+				69F32AFD221348F100738736 /* MTGDetailViewController.swift in Sources */,
+				69F32AFB2213429100738736 /* MTGViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = EL2F2DUNV5;
 				INFOPLIST_FILE = "Meal Rating/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -345,7 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = EL2F2DUNV5;
 				INFOPLIST_FILE = "Meal Rating/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

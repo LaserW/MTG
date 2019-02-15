@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MealViewCell: UITableViewCell {
+class MTGViewCell: UITableViewCell {
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var starsLabel: UILabel!
